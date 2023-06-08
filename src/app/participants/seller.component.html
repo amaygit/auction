@@ -1,0 +1,11 @@
+<h2>Seller List</h2>
+
+<div *ngIf="sellers">
+  <ul>
+    <li *ngFor="let seller of sellers">
+      <h3>{{ seller.name }}</h3>
+      <p>Email: {{ seller.email }}</p>
+      <p>Location: {{ seller.location }}</p>
+    </li>
+  </ul>
+</div>
